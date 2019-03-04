@@ -1,3 +1,12 @@
+$(document).ready(function(){
+ $("form#playerName").submit(function(event){
+   event.preventDefault();
+   var player1Name = $("input#player1").val();
+   var player2Name = $("input#player2").val();
+    $("#player1Name").text(player1Name)
+    $("#player1Name").text(player1Name)
+  });
+
 var player1="";
 var player2="";
 
