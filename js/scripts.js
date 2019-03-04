@@ -6,7 +6,7 @@ var diceRoll = function () {
 }
 
 function Player(turn) {
-  this.roll = 0;
+  this.diceroll = 0;
   this.roundtotal = 0;
   this.totalscore = 0;
   this.turn = turn;
@@ -15,11 +15,15 @@ function Player(turn) {
 
 
 Player.prototype.rollone = function() {
-  if (this.roll === 1) {
-  this.tempscore = 0;
+  if (this.diceroll === 1) {
+  this.roundtotal = 0;
   alert("Sorry " + this.playerName + ", you rolled a 1! Your turn is over!")
-  // this.changeturn();
   } else {
-  this.tempscore += this.roll;
+  this.roundtotal += this.diceroll;
   }
 }
+Player.prototype.hold = function () {
+    this.totalscore += this.roundtotal;
+    this.roundtotal = 0;
+    alert(this.playerName + ", your turn is over!");
+  
