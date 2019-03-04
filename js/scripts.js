@@ -10,7 +10,7 @@ function Player(turn) {
   this.roundtotal = 0;
   this.totalscore = 0;
   this.turn = turn;
-  this.playerName;
+  this.player;
 }
 
 
@@ -26,4 +26,6 @@ Player.prototype.hold = function () {
     this.totalscore += this.roundtotal;
     this.roundtotal = 0;
     alert(this.playerName + ", your turn is over!");
+}
+    
   
