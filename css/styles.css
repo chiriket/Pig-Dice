@@ -4,3 +4,6 @@ body{
 .column{
     float: left;
 }
+h1{
+    text-align: center;
+}
