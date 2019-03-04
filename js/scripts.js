@@ -8,17 +8,19 @@ $(document).ready(function(){
   })
   
   function player(turn) {
-    this.diceroll = 0;
-    this.turnscore = 0;
-    this.totalscore = 0;
+    this.diceroll1= 0;
+    this.turnscore1= 0;
+    this.totalscore1 = 0;
     this.turn = turn;
     this.playerName;
   }
 
-  $(".diceroll").click(function player1() {
+  $(".diceroll1").click(function player1() {
     var diceroll = Math.floor(Math.random() * 6) + 1;
-    parseInt($(".totalscore").text(diceRoll));
+    parseInt($(".totalscore").text(diceRoll1));
   }
+
+
 
 
   
