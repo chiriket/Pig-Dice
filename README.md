@@ -7,19 +7,12 @@ Players take turns rolling a dice as many times as they like.If a roll is 2, 3, 
 ## Setup/Installation Requirements
 github
 
-
-
 ## BDD
-
-|   BEHAVIOUR      | INPUT     | OUTPUT      |
-|------------------|-----------|-------------|      
-| correct answer   |  20       |    20%      |
-|    checked       |           |             |         
-|                  |           |             |   
-|------------------|-----------|-------------|      
-| if player     |   0       |   0%        |
-|------------------|-----------|-------------|
-
+Ensure that there are two players:
+Create constructor that stores all the player and their scores
+when a player rolls the dice generate a random number input: click dice output: Math.floor(Math.random() (times)6+1);
+if random number is 1 they lose all their accumulated dice rolls, else the total dice rolls are added to total score.
+First player to get a total score of 100 wins the game
 
 ## Bugs
 
