@@ -1,4 +1,4 @@
-
+     
 $(document).ready(function(){
     $("form#playerName").submit(function(event){
       event.preventDefault();
@@ -45,7 +45,6 @@ diceRoll2 = rollDice();
 turnScore2 += diceRoll2;
   $("#diceRoll2").text(diceRoll2);
 $("#turnScore2").text(turnScore2);
-totalScore2 += turnScore2;
 score2(dieRoll2);
 });
 
@@ -69,7 +68,7 @@ $("#hold2").click(function(){
   $(document.getElementById("hold1").disabled = false);
   $(document.getElementById("roll1").disabled = false);
   totalScore2 += turnScore2;
-  turnScore2 -= turnScore2;
+    turnScore2 -= turnScore2;
   
   });
 });
