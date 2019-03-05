@@ -45,9 +45,9 @@ if (totalScore2 >= 100) {
   
 
 $("#hold1").click(function(){
-$(document.getElementById("Hold1").disabled = true);
+$(document.getElementById("hold1").disabled = true);
 $(document.getElementById("roll1").disabled = true);
-$(document.getElementById("Hold2").disabled = false);
+$(document.getElementById("hold2").disabled = false);
     $(document.getElementById("roll2").disabled = false);
     totalScore1 += turnScore1;
     turnScore1 -= turnScore1;
@@ -56,10 +56,10 @@ $(document.getElementById("Hold2").disabled = false);
     
   });
 
-  $("#Hold2").click(function(){
-    $(document.getElementById("Hold2").disabled = true);
+  $("#hold2").click(function(){
+    $(document.getElementById("hold2").disabled = true);
     $(document.getElementById("roll2").disabled = true);
-    $(document.getElementById("Hold1").disabled = false);
+    $(document.getElementById("hold1").disabled = false);
     $(document.getElementById("roll1").disabled = false);
     totalScore2 += turnScore2;
     turnScore2 -= turnScore2;
