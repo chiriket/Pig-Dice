@@ -5,9 +5,11 @@ $(document).ready(function(){
       var player1Name = $("#Player1").val();
       var player2Name = $("#Player2").val();
        $("#player1Name").text(player1Name);
-       $("#player2Name").text(player2Name);
+       $("#player2Name").text(player2Name);Game
      });
-  
+
+ var Player1 =""
+ var Player2 =""
      
 function Player(name) {
  this.diceRoll = 0;
@@ -22,7 +24,7 @@ return (Math.floor(Math.random()*6)+1);
 
 $("#roll1").click(function() {
  diceRoll1= rollDice();
-  turnScore1 += diceRoll1;
+turnScore1 += diceRoll1;
   $("#diceRoll1").text(diceRoll1);
 $("#turnScore1").text(turnScore1);
 });
@@ -48,9 +50,9 @@ $("#hold1").click(function(){
 $(document.getElementById("hold1").disabled = true);
 $(document.getElementById("roll1").disabled = true);
 $(document.getElementById("hold2").disabled = false);
-    $(document.getElementById("roll2").disabled = false);
-    totalScore1 += turnScore1;
-    turnScore1 -= turnScore1;
+$(document.getElementById("roll2").disabled = false);
+ totalScore1 += turnScore1;
+turnScore1 -= turnScore1;
     $("#totalScore1").text(totalScore1);
 
     
