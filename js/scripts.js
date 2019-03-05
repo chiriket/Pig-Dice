@@ -10,7 +10,7 @@ $(document).ready(function(){
   
      
 function Player(name) {
- this.diceroll = 0;
+ this.diceRoll = 0;
  this.turnScore =0;
  this.totalScore =0;
  this.playerName;
@@ -21,16 +21,16 @@ return (Math.floor(Math.random()*6)+1);
 };
 
 $("#roll1").click(function() {
- diceScore1= rollDice();
-  turnScore1 += diceScore1;
-  $("#diceScore1").text(diceScore1);
+ diceRoll1= rollDice();
+  turnScore1 += diceRoll1;
+  $("#diceRoll1").text(diceRoll1);
 $("#turnScore1").text(turnScore1);
 });
     
 $("#roll2").click(function(){
    diceScore2 = rollDice();
    turnScore2 += dieScore2;
-  $("#diceScore2").text(diceScore2);
+  $("#diceRoll2").text(diceRoll2);
 $("#turnScore2").text(turnScore2);
 });
 
