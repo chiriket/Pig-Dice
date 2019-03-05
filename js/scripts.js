@@ -7,7 +7,7 @@ $(document).ready(function(){
        $("#player1Name").text(player1Name);
        $("#player2Name").text(player2Name);Game
     });
-     
+                     
  
 function Player(name, score1, score2, score3) {
   this.playerName = name;
